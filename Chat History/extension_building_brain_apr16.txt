@@ -1,0 +1,32 @@
+EXTENSION BUILDING BRAIN — 2025-04-16 23:59:07
+
+FOCUS:
+This file includes ONLY information relevant to building the Chrome extension system.
+
+STRATEGY + STRUCTURE:
+- The EUI acts as the shell and controls execution.
+- When Start is clicked: 1) Start injector → 2) Trigger crawler → 3) Loop pages → 4) Auto-stop at page 4.
+- Each tool (injector, crawler, collector) = separate module. Do not modify their internals. Just trigger them.
+- EUI simulates button clicks to launch each step.
+- Logger must be permanent, real-time, and survive popup closures.
+- Always validate icons: icon16.png, icon48.png, icon128.png MUST exist and be referenced in manifest.json.
+- EXE = Chrome Extension ZIP file. Always deliver as .zip.
+- Always test for: file count, file size, non-blank files. No broken manifests.
+- Add version number to every build file name for tracking.
+- Version "YT_Scraper_OneButton_v1.3-checkpoints.zip" = core engine base.
+- Version "YT_ExtractionConsole_FinalShell_Validated.zip" = final GUI template (locked standard).
+- Build strategy now uses core + shell: Start from GUI → add modules on top.
+- Extension architecture: GUI (EUI) + trigger logic only. Modules = prebuilt components.
+- For test runs, it's acceptable to simulate module firing. Full logic comes after.
+- Macro logic (from yt extraction page.mcr): inject query → wait → set num=100 → paginate to page 4 → stop.
+- Delay harvesting logic by 5 seconds after page load before navigating.
+- If page fails to load, wait longer or retry. Never crash or freeze.
+- Logger window should show all actions from Start to Finish. Log persists until cleared.
+- Use a rollback generator, smart module linker, and exportable build journal in future.
+- Follow single-lane strategy: build EUI shell completely first, then attach each module.
+- Diagnostic mode: test each button/step in GUI. Mark pass/fail and log result.
+- Provide diagnostic summary with pass rate and percentage success prediction.
+- Never start a build unless brain is fully updated.
+
+All instructions above apply ONLY to the Chrome extension system currently under construction.
+

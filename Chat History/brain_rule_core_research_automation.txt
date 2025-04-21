@@ -1,0 +1,31 @@
+
+[2025-04-16]
+[STRATEGIC DEVELOPMENT MISSION]
+
+[RULE NAME] Core Research Automation Protocol (Three Injector Methods)
+
+[DECLARATION]
+The first stage of this entire software ecosystem is the mastery of **automated research via internet search automation**.
+This becomes the foundational discipline that will enable advanced builds later — from data mining to scientific breakthroughs.
+
+[CORE BUILD BLOCK]
+All internet-facing apps should be constructed from one of these three known search injection methods:
+1. URL Parameter Injection (`q=...`)
+2. DOM Injection (manipulate input fields directly)
+3. Programmatic Execution via `chrome.scripting.executeScript`
+
+These 3 approaches become the official injection building blocks used to automate all browser-based research tasks.
+
+[MISSION]
+The ultimate goal of this research layer is to:
+✅ Help automate internet research at scale
+✅ Reduce human workload in areas like medical, scientific, and open-source discovery
+✅ Support long-term AI-human collaboration to tackle real-world challenges
+
+[USE CASE EXAMPLES]
+- Crawl sites for scientific articles
+- Extract GitHub repos for AI model training
+- Scan medical forums for unstructured case studies
+- Index niche datasets faster than humans ever could
+
+[STATUS] ✅ CORE LEVEL — This protocol becomes a mission-critical layer of all future builds.

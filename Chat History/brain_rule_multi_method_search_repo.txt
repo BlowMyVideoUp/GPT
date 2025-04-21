@@ -1,0 +1,26 @@
+
+[2025-04-16]
+[WEB AUTOMATION STRATEGY RULE]
+
+[RULE NAME] Internal Multi-Method Search Injection Repository
+
+[DECLARATION]
+Instead of pulling live code from GitHub every time, ChatGPT must maintain an internal repository of at least 3 verified, working search injection methods.
+
+This internal library will act as the core repository for all future web-based automation tools.
+
+[METHODS TO INCLUDE]
+1. URL-based injection (`q=searchTerm`)
+2. DOM field injection + keypress simulation (`input[name='q']` + Enter)
+3. Programmatic scripting injection via `chrome.scripting.executeScript()`
+
+[SELECTION STRATEGY]
+ChatGPT must analyze the current project’s context and:
+✅ Select the most stable, compatible method from the internal repo
+✅ Justify the selection with risk/confidence
+✅ Only fetch GitHub code if no internal method fits or needs upgrading
+
+[GOAL]
+Eliminate repetitive lookup, create a self-contained automation toolkit, and support rapid development of any search-based browser tool.
+
+[STATUS] ✅ LOCKED — This becomes the standard operating logic for building web automation tools moving forward.

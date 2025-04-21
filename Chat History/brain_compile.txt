@@ -1,0 +1,90 @@
+
+[COMPILE BRAIN]
+
+PROBLEM:
+Tabs failed to switch or display correctly due to inconsistent or bloated HTML/CSS structure.
+Error Symptoms:
+- Buttons did not respond
+- Tab content overlapped or stayed visible
+- Active class not properly toggled
+- Inherited bad layout from prior builds
+
+SOLUTION:
+- Rewrote HTML from scratch using a simple flat layout
+- Defined `.tab-button` and `.tab-content` cleanly
+- Used exclusive `.active` class logic
+- Verified tab switching in a clean environment with no reuse
+- Logged this version as the first valid UI frame
+
+--- TEMPLATE LOCKED BELOW ---
+
+[KNOWN FRAME - TEMPLATE ERROR PREVENTION - LEVEL 1]
+
+Description:
+This HTML frame is the first confirmed working version of a tab-switching template.
+It resolved the broken styling and tab functionality from the previous attempt.
+
+Purpose:
+Lock this frame as a baseline to avoid future rebuilds from polluted structures.
+
+--- START OF TEMPLATE ---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Chat Box - Level 1 Template Reset</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 320px; margin: 0; background: #f0f0f0; }
+    .tab-bar { display: flex; background: #ccc; border-bottom: 2px solid #999; }
+    .tab-button {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      background: #ddd;
+      border-right: 1px solid #999;
+    }
+    .tab-button:last-child { border-right: none; }
+    .tab-button.active { background: #fff; font-weight: bold; }
+
+    .tab-content {
+      display: none;
+      padding: 12px;
+      background: #fff;
+      min-height: 160px;
+      border-top: none;
+    }
+    .tab-content.active { display: block; }
+  </style>
+</head>
+<body>
+  <div class="tab-bar">
+    <div class="tab-button active" data-tab="chat">Chat</div>
+    <div class="tab-button" data-tab="builds">Builds</div>
+    <div class="tab-button" data-tab="memory">Memory</div>
+    <div class="tab-button" data-tab="debug">Debug</div>
+  </div>
+
+  <div id="chat" class="tab-content active">[Chat tab is visible]</div>
+  <div id="builds" class="tab-content">[Builds tab is visible]</div>
+  <div id="memory" class="tab-content">[Memory tab is visible]</div>
+  <div id="debug" class="tab-content">[Debug tab is visible]</div>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+--- END OF TEMPLATE ---

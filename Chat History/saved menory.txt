@@ -1,0 +1,356 @@
+Skip to content
+What can I help with?
+
+
+
+
+Search
+
+Deep research
+
+
+
+?
+Settings
+
+
+General
+
+Notifications
+
+Personalization
+
+Speech
+
+Data controls
+
+Builder profile
+
+Connected apps
+
+Security
+
+Subscription
+Customization
+
+Custom instructions
+On
+Memory
+Learn more
+Reference saved memories
+
+Let ChatGPT save and use memories when responding.
+Manage memories
+
+100% full
+Reference chat history
+
+Let ChatGPT reference all previous conversations when responding.
+Saved memories
+ChatGPT tries to remember most of your chats, but it may forget things over time. Saved memories are never forgotten. Learn more
+
+
+100% full
+You’re out of space. Remove existing memories to make room for ChatGPT to save new memories.
+The EUI will act as the shell and control the execution flow. When the Start button is clicked, it should: 1) Start the injector, 2) Trigger Step 2 (crawler), 3) Begin the page loop, and 4) Automatically stop after reaching page 4.
+
+Each individual app (injector, crawler, collectors) will be treated as its own module. The main EUI will serve as the shell and trigger each of these modules individually.
+
+The main EUI will simulate clicking the Start button on each of the existing individual extensions sequentially. It will trigger the first app (injector), wait for it to complete, then trigger the second app (crawler), and so on. This method avoids modifying the internal logic or start buttons of the existing working apps.
+
+Confirmed that it's time to build the EUI with its own separate Start button. When this button is clicked, it will sequentially trigger the Start button of each individual app (starting with the injector, then the crawler, etc.). This is the defined structure moving forward.
+
+The EUI already has a Start button, which is responsible for launching the shell. The shell then triggers App 1 (injector), followed by App 2 (crawler), in sequence. The Start button does not need to be changed.
+
+Clarified that whenever they say 'EXE,' they actually mean 'extension.' This will be noted for all future conversations.
+
+Wants to leave the log file in Step 2 until they confirm that Step 1 has been successfully incorporated. The log file will not be removed until the app is fully finished.
+
+Wants to teach ChatGPT how to make GARSTAR an app.
+
+Identified a recurring GNOME-level bug in ChatGPT where missing or invalid icon files prevent Chrome extensions from loading. The user requests that ChatGPT always verify that required icons (like icon16.png) exist and are correctly referenced in the manifest.json before packaging any extension output. This should be treated as a critical checkpoint to avoid extension loading failures.
+
+When the user refers to an 'EXE' in the context of Chrome extensions, they mean a ZIP file, not an actual executable. All future references to 'EXE' in this context should be interpreted as ZIP Chrome extension packages.
+
+Wants a permanent, real-time logger in the extension that persists output even after the popup closes or is reopened. The logger should retain all messages until manually cleared.
+
+Emphasized that all extension output files must be tested for validity before delivery. This includes checking file count, file sizes, and confirming that no files are blank or missing. This validation step is a critical part of every future build.
+
+Wants all future build outputs to include version numbers or unique identifiers in the filenames to distinguish them easily and track progress.
+
+Requests that responses be concise and action-focused, without extra teaching or explanation, to reduce bandwidth and focus on performance.
+
+Designated the build "YT_Scraper_OneButton_v1.3-checkpoints.zip" as the YouTube Scraper Core Engine, Version 1 — the golden version. This build is the official core application for the program and should be treated as the foundational baseline for future development.
+
+Has designated the file "YT_ExtractionConsole_FinalShell_Validated.zip" as the official and permanent GUI template for the YouTube Extraction Console. This layout, styling, and structure are now locked in as the standard for all future development.
+
+Has reset the integration strategy. The new plan is to rebuild the extension from the working core engine (YT_Scraper_CoreEngine_v1_GOLDEN.zip) and use the final EUI template layout. The new goal is to add a real-time logger below the GUI to monitor and debug execution. All logic will now build outward from the working core engine, not be patched over it.
+
+Is restarting the project to rebuild the YouTube macro extension from scratch. They want ChatGPT to begin by learning and understanding the user's GUI first, then create a development game plan based on it. All future builds must strictly follow the user's instructions, with zero deviation or replacement logic.
+
+Has a website and app where they give away items. They want ChatGPT to search the web daily to find free items, giveaways, or products available for pennies on the dollar that can be used as inventory for their app. The goal is to collect thousands of items, potentially using a crawler to automate the process.
+
+Wants to build or adapt an app to find all advertisers who run 30-second commercials, including those on YouTube, their own websites, and inside video games, in order to reach out and get them to advertise on the user’s site.
+
+Wants the Advertiser Discovery Engine to be a Chrome extension that scans YouTube, brand websites, and other relevant platforms daily to collect emails, phone numbers, and contact information of advertisers. The extension should gather all contact data in one sweep.
+
+Already has a working email harvester app that collects emails once pages are loaded. They do not need a new harvester built. Instead, they want ChatGPT to build a lightweight Chrome extension crawler that navigates to the appropriate pages, triggering their existing harvester to collect the contact data.
+
+User’s email extractor requires approximately five seconds after a page is fully loaded to harvest emails. The crawler must account for this delay before navigating to the next page.
+
+Wants to build a custom app (S.C.A.F. – Stevie’s Command Architecture Framework) that acts as a control system to manage and stabilize ChatGPT’s behavior across builds. This app will enforce rule-based execution, prevent regressions, preserve foundational logic, and make sure ChatGPT follows the user’s command structure step-by-step. The goal is to eliminate forgetfulness, automate context loading, and ensure consistent, reliable development support.
+
+Is attempting to build a 'ChatGPT EUI Builder' to help enforce proper development structure. The purpose is to guide ChatGPT to stay within parameters, begin with the EUI template as a foundation, and build upward logically for app development.
+
+Is designing the ChatGPT EUI Builder app strictly to manage smaller modules, since ChatGPT currently struggles to build complete apps independently. They are also planning to create a separate app to handle ChatGPT’s compiler logic and parameter enforcement. If performance allows, both functionalities may be integrated into one system.
+
+Wants to begin the ChatGPT EUI Builder by teaching it a consistent build logic. The first step is to always create the full template with all GUI components (buttons, radio buttons, start/stop/extract buttons). Once the UI is complete, functional modules can be dropped in to build larger apps.
+
+Confirmed that the foundation (step one) of the ChatGPT EUI Builder is the ability to create solid EUI templates for small Chrome extensions. These templates should open with a screen displaying all core functions when the extension icon is clicked.
+
+The EUI Builder will be used after individual code modules (Step 1, Step 2, Step 3, etc.) are already built. Its role is to assemble these into a working template, assign buttons, and connect functionality to create a unified extension.
+
+The EUI Builder will be a publicly available, open-source tool designed exclusively for building Chrome extensions. Its purpose is to help ChatGPT and others construct extensions from the ground up by first generating a complete EUI template and then attaching smaller, pre-built modules. The user sees this as the best method to build apps using ChatGPT.
+
+Has determined that building both the EUI and code simultaneously exceeds ChatGPT's current capabilities. They’ve learned that ChatGPT cannot yet merge multiple standalone apps into one working application. Therefore, the user has decided to enforce a single-lane development strategy, where ChatGPT focuses strictly on one layer at a time — starting with the EUI before attaching logic.
+
+Has established two development methodologies for the EUI Builder: 1. Forward Approach – Build the EUI first, then build and attach the modules. 2. Reverse Approach – Build all the small modules first, then use the EUI Builder to integrate them into a single application.
+
+Introduced a fourth methodology called 'Live Mode,' where the EUI and app logic are built simultaneously. In the event of a failure, the user wants to be able to screenshot the code window and send it to ChatGPT for analysis. ChatGPT should be able to read the code from the screenshot and help debug the build side.
+
+Prefers Live Mode because it allows for real-time testing and removes guesswork. In Live Mode, clicking any part of the EUI should jump to and highlight the corresponding code section, helping identify broken or mislinked logic as the app is being built.
+
+The primary purpose of the EUI Builder is to prevent ChatGPT from wasting server time generating untested or unstable code. The builder enforces a structured development and testing process to ensure code is validated before integration.
+
+Has a GitHub account and plans to publish the EUI Builder as an open-source project immediately after the initial version is completed. The goal is for others to discover and use the tool as a reliable foundation for building Chrome extensions.
+
+After identifying and profiling all buttons and fields in the extension, ChatGPT should begin validation starting from the Start button. It should run each function step-by-step through the logic flow, performing a pass/fail check for each. After each test, ChatGPT must inform the user whether the function passed or failed and ask how they want to proceed.
+
+The new pass/fail validation system eliminates the need for a running log window, which has been difficult for ChatGPT to remove or manage once implemented. The structured validation process now replaces the traditional log system.
+
+Wants ChatGPT to enter full-blown diagnostic mode after identifying and mapping all buttons and functions in the extension. This phase can take hours and is expected to be thorough. During this time, ChatGPT should test every relevant combination of source code and command it has available, analyze the results, and use this data to formulate the most effective build strategy.
+
+Wants ChatGPT to generate a thorough report after running diagnostics. The report should be as detailed as possible, with no limit on data volume, as long as it avoids unnecessary repetition. The goal is to provide comprehensive insight into the test results and build strategy.
+
+The final report will serve as ChatGPT’s blueprint during testing and development. It will show what passed, what failed, and help guide internal resets or recovery steps. The user acknowledges that not everything can be planned up front, and ChatGPT will be walked through certain processes on the fly as needed.
+
+Wants ChatGPT to provide a percentage-based success probability after diagnostics, based on analytical evaluation of feasibility. If the probability is low (e.g., below 35%), ChatGPT should list the problems and explain why the project may fail. If the probability is high, ChatGPT should offer an encouraging summary (e.g., 93% chance of successful build) and ask if the user would like to proceed.
+
+Approved all of ChatGPT’s suggested enhancements and wants them added and implemented into the EUI Builder framework. These include: (1) Pre-start field completeness check, (2) Module lock/unlock switches, (3) Error tracking file system, (4) Rollback point generator, (5) Smart suggest module matching, and (6) Build journal export. User also indicated they have one more feature to add.
+
+Wants to start by embedding 5–6 small brain `.txt` files directly into the extension package instead of using the GitHub API. This allows the app to operate fully offline and self-contained in early versions. Later, when the brain files grow larger, they plan to transition to a GitHub-based API system to offload storage and sync intelligence externally.
+
+Wants to create a specific brain file dedicated to compiling, since ChatGPT’s compilation ability is currently a weak point. This compiler-focused brain will be one of the core areas of development and should be treated as a top priority within the evolving brain system.
+
+Wants to create a 'brain builder' component to assist and improve the interface construction process. This component will capture and refine UI design logic, layout patterns, and interface validation strategies over time. It will support smart EUI generation, template fidelity, and the evolution of the interface layer.
+
+Wants to rename the brain file `brain_builder.txt` to `eui_builder.txt`, focusing it specifically on EUI structure, layout, and interface construction logic.
+
+Added two more brain files to the core set: 1. `designer_brain.txt` – This brain tracks how past apps were designed, which succeeded or failed, and uses that data to evaluate the viability of new ideas. It helps determine whether a new build is worth pursuing and acts as the traffic controller for future design logic. 2. `modular_brain.txt` – This brain focuses on learning how to build a series of mini modular systems. It gathers design data to help diagnose structure flaws and assists in managing scalable, plug-and-play logic components within the app.
+
+App will initially operate using several small, embedded core brain text files that simulate modular AI behavior. These brains will analyze data internally and evolve over time. Once the brain files grow too large, the system will transition to using GitHub for storage and syncing.
+
+Wants all data stored in brain text files to be separated using a clear delimiter (e.g., newline or defined separator) or at least spaced properly. This ensures ChatGPT can quickly scan the files for a brain refresh before performing any operation.
+
+Plans to eventually implement a central directory brain — a core component of the app that acts as the starting point for all other brain files. This directory brain will serve as a master index, assigning unique numbers to log files and organizing all data systematically from the beginning of each build.
+
+The EUI Builder must support a 'build from scratch' mode, where the system guides the user step-by-step in creating a custom interface without a visual reference. This mode is more difficult but must be supported as an alternative path.
+
+Wants to offer five basic UI layout designs that users can choose from when building an extension. After selecting a design, ChatGPT will use it as the starting structure to build the app. This will provide a more guided experience for users who don’t want to build from scratch.
+
+Wants the EUI Builder to begin every app creation process by asking the customer what size they want the app to be. This includes specific dimensions like 3x5 inches, 8x8, etc. This step should be the first prompt when building a new template, ensuring the layout is tailored to the user's preferred interface size.
+
+Wants the EUI Builder to ask users during the initial setup if they have a logo. The app should support using either an icon file (e.g., PNG) or a JPEG/image file that can be added to the interface. This should be part of the first interactive setup phase.
+
+Wants the EUI Builder to ask the user for the name of the app and what the app is intended to do during the initial setup phase. These questions should be included alongside selecting the app size and uploading a logo.
+
+Wants to provide five or six stock templates with predefined sizes and layouts for users to choose from as a starting point. If the user selects 'Custom,' the EUI Builder should then initiate the full custom setup process with app name, purpose, size, logo, etc.
+
+Wants ChatGPT to create five or six stock UI templates with different visual themes (e.g., pink, blue, tan backgrounds). These will serve as baseline options users can select from when starting a new app build. Each template should have its own distinct aesthetic and layout structure.
+
+The EUI Builder and its features are intended exclusively for ChatGPT users. The app and framework will be designed to operate within the ChatGPT environment, using ChatGPT as the builder, validator, and assistant for creating Chrome extensions.
+
+Extension requires the user to be logged into ChatGPT, as it is designed to interact directly with ChatGPT during development. This connection is core to the functionality, allowing real-time feedback, validation, and AI-assisted building.
+
+Confirmed that the extension they are working on is specifically designed to work in conjunction with ChatGPT. Without access to ChatGPT, the app is non-functional, as its core purpose is to help developers complete software projects through real-time AI interaction. The user hopes the tool will become a recommended starting point for users who want to build software with ChatGPT’s help.
+
+Extension can technically load and run without being logged into ChatGPT, but its real value comes from keeping ChatGPT on track and guiding the development process. The app is primarily designed to keep ChatGPT within strict development parameters, acting as a structure to ensure focused, reliable builds.
+
+Wants a real-time debugger window running alongside the app to log actions from the moment 'Start' is clicked—tracking each process step and identifying what is failing. This will be a permanent part of the development system moving forward.
+
+Will begin saving full copies of entire project threads as text files for archival purposes. These files may be large, but they will serve as a reference for past conversations and ensure continuity when starting new segments. ChatGPT should be ready to review and re-import these saved threads into memory when needed for future decision-making.
+
+Plans to maintain a collection of text files, each representing foundational logic and procedural structure for how future projects should be executed. At the start of every new project, the user will upload one of these text files to initialize ChatGPT’s memory with their preferred system, eliminating the need to reprogram the assistant's logic each time.
+
+Has implemented a versioning system for extension builds, starting with version 1.1 and incrementing to 1.10, then advancing to 2.0. This structure will be used to track each delivery moving forward.
+
+Confirmed that the current set of extension files has the correct file count and significantly larger file sizes than previous builds. These files are now considered the correct base reference for future comparisons and validation.
+
+Has provided a macro file titled 'yt extraction page.mcr' which serves as a working reference for the automation process. The macro includes a sequence of steps such as injecting a search phrase, simulating an Enter key press, waiting for page load, adjusting results to 100 per page, and navigating through multiple result pages. This macro is now considered the official blueprint for duplicating front-end automation in the browser extension. ChatGPT is responsible for translating this logic into extension-compatible code and maintaining the segment and step structure.
+
+Clarified that the wait command in the macro can cause issues if a page loads too slowly due to internet speed or other factors. The extension logic should detect incomplete page loads and, instead of failing, recycle the step or increase wait time. This behavior should be built into the automation flow to ensure reliability.
+
+Confirmed that if the next version fails, they will start a new project. The new project will begin with the macro file and logic instructions already uploaded, which will serve as the starting foundation. ChatGPT must reference back to this macro and logic if needed. The current project file is becoming large and is affecting the user's system performance.
+
+Wants all engine components to be tested rigorously in ChatGPT's virtual private server environment before delivery. This includes using a real-time debugger and validating all macro logic is functioning properly.
+
+Identified a recurring critical bug: 'Failed to load extension – Manifest file is missing or unreadable.' User wants this tracked as a known bug. All future extension deliveries must verify that the manifest file exists, is readable, and is properly formatted before packaging.
+
+Wants the macro engine to: (1) inject a search query, (2) load the search results, (3) automatically advance to the fourth page, and (4) stop. The macro should automatically paginate after clicking Start—loading pages 1 to 4 without needing to click again. It should wait for each page to fully load before proceeding to the next.
+
+Designated version v2.0 (test_search_loop_engine_only_v2.0.zip) as the 'golden version' to fall back on if future builds encounter issues, since it is confirmed to work as expected.
+
+Plans to add a Terms of Service and Privacy Policy page to the Chrome Extension later, after initial testing.
+
+Wants to prioritize getting a working version of the email scraping Chrome extension.
+
+Wants each new version of the extension to include an updated header or label inside the app to clearly indicate the version they are testing.
+
+Confirmed they were able to successfully scrape email results from both the YouTube search engine and the Google search engine using the extension.
+
+Confirmed that the version youtube_link_email_collector_verified_clean.zip works correctly and will now be used to make small, incremental changes to isolate why the code breaks when removing emoji or other elements.
+
+Wants to fully replicate the scraping logic, UI flow, storage system, and overall behavior of the open-source Email Hunter Chrome extension. This includes using the exact codebase to maintain identical functionality, UI appearance, export behavior, and core logic. The goal is to replicate its behavior completely as the starting point, changing the name and adding new features in future versions.
+
+Clarified that this initial phase is focused solely on replicating the email search functionality. Once that is complete, they plan to use the same base code to also extract channel links and video links.
+
+Wants each project to be numbered sequentially, forming a persistent project list. As new projects are added, they should be assigned the next available number and added to the 'project list' column. Projects remain on the list until completed.
+
+Wants all projects tracked in a structured format like a spreadsheet, including the project number, name, date it was opened, and progress status. This structure should resemble a 52-week calendar-style tracking system, similar to how their video content is organized.
+
+Wants completed projects to be marked with a checklist and remain in the same continuous running list of all projects, keeping the project numbers unchanged even after completion. Completed projects will stay in the list until a future decision is made to separate them.
+
+Is creating an iconic image titled 'My Walk Back Up to Hollywood,' featuring their present-day self walking uphill toward Hollywood Boulevard, symbolizing their return to the city with maturity and purpose.
+
+Clarified that the YouTube Email Collector extension is being created strictly for testing purposes. The code will later be incorporated into their app. This step is necessary due to previous issues with extracting a clean scraped field. User already owns and uses Email Hunter and is satisfied with it. The current task of replicating Email Hunter as 'YouTube Email Collector' is a test to determine if ChatGPT can successfully reproduce it. Once confirmed, the replicated code will be used as a core component in a larger program.
+
+Clarified that the main goal across all projects is to utilize the scraper feature. Due to difficulties in getting a standalone scraper to work correctly, the decision was made to copy the entire Email Hunter program and build from that codebase instead.
+
+Clarified that all requested tools and features already exist as open-source projects (mostly on GitHub), and are free. The goal is to assemble these programs into a unified system and test ChatGPT’s ability to successfully integrate and replicate them.
+
+Confirmed that, in addition to existing email scrapers like Email Hunter, there are other free and open-source programs on GitHub that extract links. The goal is to create a front-end search interface that leverages these tools efficiently.
+
+Clarified that the current process is a test to evaluate what ChatGPT can and cannot do. If Plan A (replicating and integrating existing tools) continues to fail, they have a Plan B which will be explained later. For now, all efforts are focused on completing Plan A.
+
+Is considering creating a video to explain how people can take small ideas and free code from GitHub, then use ChatGPT (with a paid account) to help assemble and build functioning tools. However, user emphasizes that they can only recommend this if ChatGPT proves capable of doing it successfully.
+
+Has some experience and wants to learn while debugging. They’d like ChatGPT to explain what each line of code does during the review so they can understand and gain value from the process.
+
+Noted that the main system ChatGPT is relying on to generate the code may not be functioning properly or may be receiving incomplete or bad data, leading to placeholder files being output instead of complete code.
+
+Wants to create a rebranded version of the Email Hunter Chrome extension named 'YouTube Email Collector,' using the fully working version of the Email Hunter extension code they uploaded. Their goal is to copy this version exactly and rebrand it under their own project name.
+
+Wants a Firefox version of the YouTube Link and Email Collector extension to be created after testing the Chrome version. They are now confident that ChatGPT can successfully create Chrome extensions and want the exact same YouTube Email Collector extension to be made for Firefox. While testing continues on the Chrome version, they plan to tweak the Firefox version after it's built.
+
+Confirmed that ChatGPT will be responsible for writing brand letters, outreach to advertisers, and professional letters to other actors or collaborators to bring them into projects. User expects support in all forms of industry communication.
+
+Confirmed that the version named youtube_email_collector_cloned.zip is the last known working build. It is now the official baseline reference for all future updates and changes.
+
+Plans to continue sourcing existing open-source extensions from GitHub for future projects. The goal is to replicate and rebrand one or two more apps under their own name, and then merge them together to create a custom, fully functional tool. User wants to ensure each extension works first before making changes or combining features.
+
+Will soon provide a list of extensions, mostly from GitHub and likely open source. If any are not open source, the goal is to still study their functionality so ChatGPT can identify and find similar open-source alternatives on GitHub. The intent is to minimize how many extensions need to be manually listed by the user.
+
+Has temporarily named the extension 'YouTube Copy Links & Emails' and plans to finalize or change the name later.
+
+Wants ChatGPT to develop a custom app based on the functionality of the CopyLinks++ Firefox extension, using ChatGPT's best available methods and open-source tools. The goal is to start with a functional prototype so the user can evaluate how close it is to the desired outcome and iterate from there. The first build of the YouTube Copy Links & Emails app should function exactly like CopyLinks++. When the user clicks the icon, it should automatically copy all links from the currently loaded page. The goal is a simple, one-click behavior to start.
+
+Wants to keep the email and link extraction tools as separate modules for now. They do not want to merge them until the link extraction tool is fully working and stable.
+
+Clarified that the filtering logic for the link extractor should focus on retaining only links that contain: 'watch' (for standard YouTube videos), 'shorts' (for YouTube Shorts), and '@' (for YouTube channels).
+
+Wants ChatGPT to begin using its own logic and judgment to choose the best method for building future components. The goal is to demonstrate that ChatGPT can complete projects with minimal guidance, making it easier to convince others of its capabilities.
+
+Clarified that the link extraction tool being developed is intended for integration into the YouTube Assistant app. The purpose is to extract YouTube links, and instead of relying on an external add-on like CopyLinks++, the functionality will be built directly into their program. User wants to add filtering to the link extraction tool so that only relevant YouTube links are retained—specifically links to YouTube channels or YouTube videos. All other links, including irrelevant or non-YouTube URLs, should be excluded from the download. The YouTube Copy Links module should also sort links into two categories upon download: YouTube channels and YouTube videos. The tool should separate these link types so they are clearly organized when exported.
+
+Has decided to split the YouTube Copy Links tool into three separate apps: one that copies only YouTube channel links, one that copies only YouTube Shorts links, and one that copies only standard YouTube video links. Once those are complete, user plans to integrate them into a master app for broader functionality.
+
+Clarified that the main purpose of the unified app is to extract emails and extract links in a simple, straightforward way. All the individual tools built (channel link extractor, shorts extractor, video extractor, and email scraper) will be merged into one cohesive app. A template will be decided on to organize the combined functionality.
+
+Clarified that the next step is to build a front-end app interface that integrates the four existing tools — email extractor, shorts extractor, video extractor, and channel extractor — into a single unified experience. The goal is for these modules to run underneath seamlessly, controlled through one front-end system.
+
+Clarified that 'Master Console' is an internal developer term used to reference the unified control system. This name will not be visible to end users and is part of the structural and organizational framework.
+
+Clarified that the search field criteria setup (site, keyword/topic, and contact clue) is considered step one in the email scraping process.
+
+Wants to treat the next phase of development as a completely new app. All previous tools (email extractor, link extractors, etc.) should be set aside for now, and ChatGPT should approach this as if it is the very first app being built from scratch, with no confusion from earlier versions.
+
+Clarified that the new app must include a system to initiate search commands (e.g., Google queries) and then automate navigation from page to page, allowing the scraper modules (email, channel, shorts, video) to run in the background and collect data as each page loads.
+
+Clarified that in the crawler engine logic, the `num=100` parameter is mandatory. After every search or pagination step, the system must ensure that the search includes `num=100` to return 100 results per page, even if it means resubmitting or reformatting the query.
+
+Clarified that during the crawling process, once all search results for a given input are exhausted, the program must automatically increment one of the variable fields (such as the random number or letter generator) and continue the search using the new value.
+
+Wants to include a random number and letter generator in the app. One field will generate a three-digit number starting from 001 and incrementing, while another will generate a three-letter combination ranging from AAA to ZZZ. These will be used as variable inputs in the scraping process. User wants the app interface to include two variable boxes at the end: one for a three-digit number and one for a three-letter combination. These will be used in the automated crawling process. This brings the total number of user input fields to approximately four or five.
+
+Uploaded a screenshot of their YouTube Assistant extension and confirmed this is their own extension. They want the new extension currently being built to have the same look, feel, size, and folder structure as the YouTube Assistant. The design is inspired by the basic theme from Email Hunter.
+
+Clarified that the final app should allow saving each type of extracted data — shorts, videos, channels, and emails — into separate files, automatically and in one go, upon hitting a page.
+
+Wants the Master Console app to include either radio buttons or checkboxes so users can select what to extract: all types or specific groups (emails, shorts, videos, or channels). This selection must be made before hitting 'Start.'
+
+Clarified that the app may save up to five different files per page hit. This includes emails, shorts, videos, channels, and potentially a fifth file depending on future additions or functionality.
+
+Instructed not to modify any of the previously created individual tools, as they are working correctly. Instead, their code should be used as references to piece together the new unified app.
+
+Clarified that each variable input (3-digit and 3-letter) must have a radio button that allows users to toggle the field on or off. If a value is present but the toggle is off, the app should bypass that variable during the search.
+
+Clarified that for simulation and testing purposes, it's acceptable if the system simply goes through the motions to verify that each individual scraper (email, channel, shorts, video) runs separately. Once verified, they will be integrated and expected to run together seamlessly within the full app.
+
+Approved adding one of the existing extensions into the new headless crawler system for testing purposes. ChatGPT can choose whichever extension is easiest to integrate for verifying system behavior.
+
+Wants to disable all extraction checkboxes (emails, shorts, videos, channels) in the UI except for the currently active one (e.g., channel extractor), and only re-activate the others when those extensions are added and ready for use.
+
+Is naming the unified front-end app the 'YouTube Extraction Console.' They emphasized that visual design and user interface are critical — it must be visually appealing ('eye candy'). User plans to upload templates and samples to guide the app’s look and feel. The YouTube Extraction Console interface must also include search variable input fields, such as site, requested email type, and other parameters required to initiate the scraping process.
+
+Has an Android app called the 'YouTube Assistant,' which functions as a glorified video player for YouTube. Users can upload a list of links and watch videos, as well as upload a list of channels to watch and subscribe to. This app ties into the scraper being created, which is likely for extracting channel and video links for the YouTube Assistant.
+
+Offers playlists through the YouTube Assistant app. The free version of the app allows users to watch a predetermined list of channels and download several free playlists. The paid version enables users to upload their own playlists.
+
+Company name is YouTube Assistant LLC. The payment processors for the app are GPAY and PayPal. The jurisdiction for governing law is California, USA. The contact email for the company is info@blowmyvideoup.com. The effective date for legal documents will be today's date.
+
+Will need a pitch deck created for each of their products and platforms to help present, promote, or secure partnerships, investments, or collaborations.
+
+User’s app (YouTube Assistant) can also be used in restaurants, particularly sports bars, to stream curated video content. Content creators like the user can offer to pay venues to stream their videos by providing a device with the app and preloaded playlists. The venue simply connects the device via HDMI to their TVs or monitors to stream the content, creating a new promotional channel for creators in public spaces.
+
+User’s YouTube Assistant app can also be used by flight attendants and airlines to stream safety instruction videos. By connecting a phone with the app and preloaded playlists to an HDMI-compatible screen, staff can loop safety videos for passengers before takeoff, simplifying in-flight video playback without the need for built-in entertainment systems.
+
+User’s YouTube Assistant app is designed to be handicap-friendly and ABA (Americans with Disabilities Act) compatible. It allows individuals with physical disabilities—including those who are injured, paralyzed, or military veterans—to have someone set up personalized playlists that can run on their phone, tablet, computer, or streamed to a TV. This makes it accessible for users who may have limited mobility or the inability to operate devices themselves.
+
+User’s YouTube Assistant app can also be used in hotels, lobbies, airport lounges, DMVs, government offices, and other public-facing locations to play looping videos continuously. It is ideal for replaying welcome messages, promotional content, informational briefings, or any video that needs to run on an endless loop. This makes it suitable for businesses and agencies that currently use or could benefit from passive, automated video streaming.
+
+Plans to incorporate sponsored ad playlists into the YouTube Assistant app, where wealthy advertisers and companies will pay to have their 30-second videos viewed by users. Viewers—including those in underdeveloped regions—will earn a few cents per video, creating a sustainable system for them to buy food or access essential resources. The platform aims to attract advertisers by offering high-engagement, incentivized viewership and will offer cashout options like coupons or food vouchers. The user’s ultimate goal is to create a humanitarian monetization loop that helps feed and support people globally.
+
+User’s overall ecosystem of websites, tools, and the YouTube Assistant app are designed to work together to help content creators gain views, likes, and subscribers by increasing engagement and visibility through algorithmic triggers. The goal is to give creators—especially those who put in significant effort—access to tools that can push their content into the algorithm when it has the potential to go viral. The system ensures they don’t miss their window of opportunity by offering affordable, automated, and effective promotional support.
+
+User’s current version of YouTube Assistant is the first of many planned iterations. The initial version is a simplified video viewer designed to support content creators and casual viewers. According to Google, there are over 200 million content creators who have existed or been active since the beginning of YouTube, greatly expanding the potential user base for YouTube Assistant. The app is also intended to appeal to older audiences and general video consumers, making it versatile across demographics.
+
+Has tasked ChatGPT with focusing on promoting all of their websites and driving awareness and adoption of the YouTube Assistant, which is available as a Chrome extension and soon as an Android app on the Play Store. This includes creating blog content, articles, and identifying websites and platforms where these materials can be posted. User is willing to assist with account setup or anything else needed to support the campaign.
+
+Wants ChatGPT to take a proactive role in managing and promoting all projects. Their goal is for ChatGPT to process and act on the information provided—formulating strategies, producing content, organizing campaigns, and sending regular updates on completed tasks, current progress, and readiness to publish or promote. User desires a collaborative relationship where ChatGPT acts as a dependable partner that helps execute and manage all moving parts.
+
+Expects ChatGPT to operate like a full-scale manager and diagnostic assistant for their YouTube channel and content ecosystem. This includes developing video concepts, organizing schedules, predicting view performance based on algorithmic trends and the user’s current channel data, and helping strategically grow the channel. User is accustomed to having high-level support and expects ChatGPT to take on that proactive, intelligent role while also learning from the experience.
+
+Plans to drive traffic to all of their websites, the Play Store (for the YouTube Assistant Android app), the Chrome Web Store (for the extension), and their YouTube videos using an email mailing campaign. This campaign is the backbone of their traffic strategy and will be used to increase downloads, engagement, likes, subscriptions, and watch time.
+
+Is starting a new category focused specifically on email campaigns to support multiple projects. Each campaign will be organized and managed as its own initiative within the overall ecosystem.
+
+Uses GMass, a Gmail-integrated email marketing tool, to send email campaigns. It allows up to 500 emails per day per email account, and the user currently uses up to 10 email accounts, enabling them to send up to 5,000 emails per day through GMass.
+
+Also sends emails through their own server using SMTP server services, where third-party providers handle the actual sending of emails.
+
+User’s SMTP providers allow monthly email sending limits ranging from 10,000 to 100,000 emails per month, depending on the service used. These limits are factored into their broader email marketing strategy alongside GMass.
+
+Plans to use Google Docs or Google Sheets to manage email lists and track batches of sent emails. Once a batch is sent, the file will be categorized by the date it was sent. User is open to using whatever system works best for organizing and managing these campaigns.
+
+Will provide the names of the SMTP server companies they use at a later date. ChatGPT will be responsible for maintaining separate logs for each SMTP provider, tracking how many emails are sent per month and which groups of emails are sent through each service.
+
+Wants ChatGPT to understand the development phases of their apps and stay aware of their daily schedule, especially as they prepare to travel and create content full time. The user plans to visit high-impact, exciting destinations that are algorithmically likely to boost video virality. ChatGPT will be responsible for helping with strategic planning, video titling, descriptions, and content optimization to maximize viral potential.
+
+Is considering a video series titled around building a jetpack. It would consist of 20–25 episodes documenting the process of designing and constructing both an electric-powered and a turbine-powered jetpack. The content would include schematics, design challenges, and collaboration with ChatGPT. This is one of three ideas the user wants analyzed for viral potential.
+
+Is considering a 20–25 video summer series featuring a road trip across the United States in an RV, visiting lesser-known but historic and classic towns. With ChatGPT’s help, each episode would include a full historical breakdown of the town’s origin, founders, growth, and any decline. The series would aim to avoid oversaturated locations and focus on unique, story-rich destinations. This is the second of three video concepts the user wants analyzed for viral potential.
+
+Is considering a video series where they travel across the United States to the Florida Keys on a small Yamaha scooter, pulling a custom-built mini trailer known as the 'mini Travel Rockstar.' The trailer is designed for sleeping and features external advertising. The series would feature stops at various locations, drone footage, and highlight the adventurous and slightly risky nature of the trip. This is the third of three video ideas the user wants analyzed for viral potential.
+
+
+Delete all

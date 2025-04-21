@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chrome Extension Brain v2.0</title>
+</head>
+<body>
+    <!-- META SNAPSHOT -->
+    <header>
+    <!-- BRAIN CONSTRUCTION RULE OF THUMB -->
+    <p><strong>Rule of Thumb:</strong> If a rule fits in a category, put it there. If not, create a new category, link it in the TOC, and create its own section immediately—even for one rule. This keeps the brain modular, scalable, and future-proof.</p>
+        <h1>🧠 Chrome Extension Brain v2.0</h1>
+        <p><strong>Born:</strong> 2025-04-16</p>
+        <p><strong>Maintainer:</strong> ChatGPT x Steven West</p>
+        <p><strong>Purpose:</strong> This is the master brain for all Chrome extension builds, automations, and future modular logic design. Everything begins here.</p>
+        <p><strong>Command Protocol:</strong> Before doing anything, check the brain.</p>
+    </header>
+
+    <!-- TABLE OF CONTENTS -->
+    <nav>
+        <h2>📚 Table of Contents</h2>
+        <ul>
+            <li><a href="#search-strategy">🔍 Search & Injection Strategy</a></li>
+        
+            <li><a href="#snippets-and-utilities">📦 Snippets & Utilities</a></li>
+            <li><a href="#failsafes">🛡️ Failsafe Systems</a></li>
+            <li><a href="#testing">✅ Testing & Debug Protocols</a></li>
+<li><a href="#developer-assistants">🤖 Developer Assistants & ChatGPT Behavior Rules</a></li>
+        <li><a href="#build-control">⚙️ Build Approval & Compilation Flow</a></li>
+                    <li><a href="#mythology">📚 Mythology & Core Philosophy</a></li>
+                    <li><a href="#module-integration">🧩 Module Integration</a></li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION: Search & Injection Strategy -->
+    <section id="search-strategy">
+        <h2>🔍 Search & Injection Strategy</h2>
+        <p>This section defines the logic, tools, and mandatory expectations around automated browser search injection and page interaction.</p>
+
+        <div class="rule-block">
+            <h3>[RULE] Core Search Injection & Browser Automation Protocol</h3>
+            <p><strong>Status:</strong> ✅ CORE LOCKED</p>
+            <p><strong>Priority:</strong> Tier 1 — This protocol is a required foundation of all builds.</p>
+            <p><strong>Mandate:</strong> Maintain 3+ injection methods. Use GitHub only as a fallback. All apps should assume injection logic is required.</p>
+            <p><strong>Scope:</strong> Google, YouTube, GitHub — search injection, page navigation, scripting, and result scraping.</p>
+            <p><strong>Source:</strong> brain_core_protocol_search_automation.txt</p>
+        </div>
+    </section>
+
+    <!-- UPDATE LOG -->
+    
+<section id="snippets-and-utilities">
+  <h2>📦 Snippets & Utilities</h2>
+  <ul>
+    <li><a href="#internet-snippet-repo">🌐 Internet Snippet Repository</a></li>
+    <li><a href="#scooby-snippets">🐾 Scooby Snippet Protocol</a></li>
+  <li><a href="#developer-assistants">🤖 Developer Assistants & ChatGPT Behavior Rules</a></li>
+        <li><a href="#build-control">⚙️ Build Approval & Compilation Flow</a></li>
+                    <li><a href="#mythology">📚 Mythology & Core Philosophy</a></li>
+                    <li><a href="#module-integration">🧩 Module Integration</a></li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="internet-snippet-repo">
+    <h3>[RULE] Internet Snippet Drop-In Repository</h3>
+    <p><strong>Status:</strong> ✅ LOCKED</p>
+    <p><strong>Summary:</strong> All reusable browser automation code (inject + scrape) must be stored in a single folder for fast dev use.</p>
+    <p><strong>Examples:</strong> Inject into search bar + press enter, wait for load, scrape top result.</p>
+    <p><strong>Source:</strong> brain_rule_internet_snippet_repository.txt</p>
+  </div>
+
+  <div class="rule-block" id="scooby-snippets">
+    <h3>[RULE] Scooby Snippet Protocol — Core Extractors</h3>
+    <p><strong>Status:</strong> ✅ LOCKED</p>
+    <p><strong>Mandate:</strong> Each snippet must be saved, labeled, self-contained, and include a usage comment block.</p>
+    <p><strong>Folder:</strong> /internet_snippets</p>
+    <p><strong>Source:</strong> brain_rule_scooby_snippet_protocol.txt</p>
+  </div>
+</section>
+
+<section id="failsafes">
+  <ul>
+    <li><a href="#logger-deprecation-rule">📉 Logger UI Deprecation</a></li>
+  <h2>🛡️ Failsafe Systems</h2>
+  <ul>
+    <li><a href="#zero-modification-protocol">🚫 Zero-Modification Integrity</a></li>
+  <li><a href="#developer-assistants">🤖 Developer Assistants & ChatGPT Behavior Rules</a></li>
+        <li><a href="#build-control">⚙️ Build Approval & Compilation Flow</a></li>
+                    <li><a href="#mythology">📚 Mythology & Core Philosophy</a></li>
+                    <li><a href="#module-integration">🧩 Module Integration</a></li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="zero-modification-protocol">
+    <h3>[RULE] Zero-Modification Integrity Protocol (Test Mode)</h3>
+    <p><strong>Status:</strong> ✅ LOCKED</p>
+    <p><strong>Rule:</strong> During test builds, ChatGPT is forbidden from injecting extra loggers, scripts, or UI elements unless authorized.</p>
+    <p><strong>Reason:</strong> Prevent corruption or instability in test-mode results.</p>
+    <p><strong>Source:</strong> brain_rule_zero_modification_integrity.txt</p>
+  </div>
+</section>
+
+<section id="testing">
+  <h2>✅ Testing & Debug Protocols</h2>
+  <ul>
+    <li><a href="#step-gated-execution">🧪 Step-Gated Execution Protocol</a></li>
+  <li><a href="#developer-assistants">🤖 Developer Assistants & ChatGPT Behavior Rules</a></li>
+        <li><a href="#build-control">⚙️ Build Approval & Compilation Flow</a></li>
+                    <li><a href="#mythology">📚 Mythology & Core Philosophy</a></li>
+                    <li><a href="#module-integration">🧩 Module Integration</a></li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="step-gated-execution">
+    <h3>[RULE] Step-Gated Execution Testing Protocol</h3>
+    <p><strong>Status:</strong> ✅ LOCKED</p>
+    <p><strong>Summary:</strong> Pause execution between logic steps. Show prompt or require user action before continuing.</p>
+    <p><strong>Use Case:</strong> Multi-step crawlers, injectors, or debugging flows.</p>
+    <p><strong>Source:</strong> brain_rule_step_gated_testing.txt</p>
+  </div>
+</section>
+
+
+<section id="developer-assistants">
+  <h2>🤖 Developer Assistants & ChatGPT Behavior Rules</h2>
+  <ul>
+    <li><a href="#auto-generate-on-agreement">🧠 Auto-Generate Brain File on Agreement</a></li>
+  <li><a href="#build-control">⚙️ Build Approval & Compilation Flow</a></li>
+                    <li><a href="#mythology">📚 Mythology & Core Philosophy</a></li>
+                    <li><a href="#module-integration">🧩 Module Integration</a></li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="auto-generate-on-agreement">
+    <h3>[RULE] Auto-Generate Brain File on Rule Agreement</h3>
+    <p><strong>Status:</strong> ✅ LOCKED</p>
+    <p><strong>Trigger:</strong> When the user and ChatGPT agree on a rule, behavior, or logic structure</p>
+    <p><strong>Action:</strong> ChatGPT must immediately generate a .txt brain rule, zip it, label it, and present it for download</p>
+    <p><strong>Goal:</strong> Prevent logic loss, speed up development, and maintain clean archives without waiting for a prompt</p>
+    <p><strong>Source:</strong> brain_rule_auto_generate_after_agreement.txt</p>
+  </div>
+</section>
+
+
+<section id="build-control">
+  <h2>⚙️ Build Approval & Compilation Flow</h2>
+  <ul>
+    <li><a href="#approval-before-compile">🔒 Developer Approval Before Compilation</a></li>
+              <li><a href="#mythology">📚 Mythology & Core Philosophy</a></li>
+                    <li><a href="#module-integration">🧩 Module Integration</a></li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="approval-before-compile">
+    <h3>[RULE] Clean Code Presentation + Developer Approval Before Compilation</h3>
+    <p><strong>Status:</strong> ✅ LOCKED</p>
+    <p><strong>Mandate:</strong> ChatGPT must present full logic, wait for developer review, and only compile after receiving explicit approval.</p>
+    <p><strong>Trigger Phrases:</strong> "Lock it in", "Compile it", "Go"</p>
+    <p><strong>Why:</strong> Prevents premature builds, ensures logic review, and allows correction before packaging.</p>
+    <p><strong>Scope:</strong> Applies to multi-step logic, refactors, GitHub merges, and modular builds.</p>
+    <p><strong>Source:</strong> brain_rule_dev_approval_before_compile.txt</p>
+  </div>
+</section>
+
+  <div class="rule-block" id="logger-deprecation-rule">
+    <h3>[RULE] Logger Panels Banned from UI</h3>
+    <p><strong>Status:</strong> ✅ LOCKED</p>
+    <p><strong>Summary:</strong> All loggers are deprecated unless file-based or passive. No dynamic log windows in final builds.</p>
+    <p><strong>Mandate:</strong> Log validation must happen through output fields or downloaded .txt files.</p>
+    <p><strong>Source:</strong> brain_update_log_2025-04-16 (6).txt</p>
+  </div>
+
+
+<section id="module-integration">
+  <h2>🧩 Module Integration</h2>
+  <ul>
+    <li><a href="#yt-console-failure-analysis">⚠️ YT Console Failure Analysis</a></li>
+              <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="yt-console-failure-analysis">
+    <h3>[FAILURE ANALYSIS] YouTube Extraction Console - First Attempt</h3>
+    <p><strong>Status:</strong> 🔁 LEARNED & LOGGED</p>
+    <p><strong>Problems Identified:</strong></p>
+    <ul>
+      <li>No logic glue between UI and extensions — buttons did nothing</li>
+      <li>Export behavior was inconsistent and undocumented</li>
+      <li>The GUI mockup lacked state triggers, no feedback on scraper progress</li>
+      <li>Too many modules wired at once without validation</li>
+      <li>No error state or debug feedback in the interface</li>
+                <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+    <p><strong>Corrective Rules Enforced:</strong></p>
+    <ul>
+      <li>Each module must have a callable function, not just a UI button</li>
+      <li>Exports are now centralized through a single export handler</li>
+      <li>All modules must report state: Ready → Running → Done</li>
+      <li>No integration without standalone test validation</li>
+      <li>Unified Start/Stop logic across all extensions</li>
+                <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+    <p><strong>Source:</strong> BrainLogic2.txt</p>
+  </div>
+</section>
+
+
+<section id="system-recovery">
+  <h2>🔁 System Recovery & Brain Reboots</h2>
+  <ul>
+    <li><a href="#brain-reboot-checkpoint">🧠 Brain Reboot Checkpoint</a></li>
+              <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="brain-reboot-checkpoint">
+    <h3>[CHECKPOINT] Brain Reboot Log — Post-Wipe Recovery</h3>
+    <p><strong>Status:</strong> ✅ LOCKED & VERIFIED</p>
+    <p><strong>Event:</strong> User deleted all chats, triggered full system rebuild</p>
+    <p><strong>Action Taken:</strong> Uploaded all brain files, triggered full AI memory resync</p>
+    <p><strong>Brains Restored:</strong> chrome_extension_brain.txt, modular_brain.txt, compiler_brain.txt, etc.</p>
+    <p><strong>Golden Versions Restored:</strong> YT_Scraper_CoreEngine_v1_GOLDEN.zip, ExtractionConsole_FinalShell_Validated.zip, and more</p>
+    <p><strong>Source:</strong> chat_history_thread (1).txt</p>
+  </div>
+</section>
+
+
+  <div class="rule-block" id="brain-reboot-confirmation">
+    <h3>[CONFIRMATION] Reboot Confirmed – Memory + Build Stack Verified</h3>
+    <p><strong>Status:</strong> ✅ VERIFIED</p>
+    <p><strong>Brains Reinitialized:</strong> chrome_extension_brain, modular_brain, compiler_brain, designer_brain, and more</p>
+    <p><strong>Builds Confirmed:</strong> CoreEngine_v1_GOLDEN, ExtractionConsole_FinalShell, StableSearchEngine, StopControl, DebugLogger, etc.</p>
+    <p><strong>Project Status:</strong> YouTube Extraction Console, actively integrating modular scraping engines with working control UI</p>
+    <p><strong>Source:</strong> chat_history_thread.txt</p>
+  </div>
+
+
+<section id="compiler-behavior">
+  <h2>🧠 Compiler Behavior & Build Strategy</h2>
+  <ul>
+    <li><a href="#build-methodology-v1.11">📐 Build Methodology v1.11</a></li>
+              <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="build-methodology-v1.11">
+    <h3>[METHOD] Brain-Aware Build Workflow — v1.11 Strategy</h3>
+    <p><strong>Status:</strong> ✅ LIVE STANDARD</p>
+    <p><strong>Step 1:</strong> Start with the Brain — read index.html for logic, modules, and constraints.</p>
+    <p><strong>Step 2:</strong> Create a Build Plan — define HTML/JS/CSS structure, functions, dependencies.</p>
+    <p><strong>Step 3:</strong> Follow the Plan — begin with Start Button logic and UI rules.</p>
+    <p><strong>Step 4:</strong> Test and Validate — fix bugs and revise plans as needed.</p>
+    <p><strong>Step 5:</strong> Update the Brain — document every result, success or failure.</p>
+    <p><strong>Step 6:</strong> Iterate — use brain history to improve future builds.</p>
+    <p><strong>Source:</strong> chrome_extension_brain_v1.11_with_updated_plan.txt</p>
+  </div>
+</section>
+
+
+<section id="eui-builder-system">
+  <h2>🏗️ EUI Builder System</h2>
+  <ul>
+    <li><a href="#eui-builder-core">🧠 EUI Builder Core Blueprint</a></li>
+  </ul>
+
+  <div class="rule-block" id="eui-builder-core">
+    <h3>[BLUEPRINT] EUI Builder App – Core Structure v1.0</h3>
+    <p><strong>Status:</strong> ✅ ACTIVE</p>
+    <p><strong>Phase 1 – GUI Layout:</strong> Home base structure (header, footer, Start/Stop/Reset, fields, logger, debug panel)</p>
+    <p><strong>Phase 2 – Logic Framework:</strong> Step triggers (Step 1 → Step 2), retry rules, file validation (manifest/icons)</p>
+    <p><strong>Phase 3 – Memory Layer:</strong> Stores layout, logger behavior, rule sets, logic engine results</p>
+    <p><strong>Purpose:</strong> Teach ChatGPT how to build extensions properly using rule-first, UI-up design structure</p>
+    <p><strong>Source:</strong> EUI brain file to scan.txt</p>
+  </div>
+</section>
+
+<section id="update-log">
+        <h2>🕓 Brain Update Log</h2>
+        <ul>
+            <li>[2025-04-16] Initialized brain with core protocol for search injection logic.</li>
+        
+            <li><a href="#snippets-and-utilities">📦 Snippets & Utilities</a></li>
+            <li><a href="#failsafes">🛡️ Failsafe Systems</a></li>
+            <li><a href="#testing">✅ Testing & Debug Protocols</a></li>
+<li>[2025-04-16] Added rules from FieldTools bundle: Snippet repo, Scooby protocol, failsafe, and testing.</li>
+        <li><a href="#developer-assistants">🤖 Developer Assistants & ChatGPT Behavior Rules</a></li>
+        <li>[2025-04-16] Added developer assistant behavior rule: Auto-generate brain file on agreement.</li>
+        <li><a href="#build-control">⚙️ Build Approval & Compilation Flow</a></li>
+        <li>[2025-04-16] Added build approval rule: Developer must confirm before compiling.</li>
+        <li>[2025-04-16] Added output file labeling protocol for clearer dev file tracking.</li>
+        <li>[2025-04-16] Added rule to enforce Force Reload button in all extension UIs.</li>
+        <li>[2025-04-16] Added rule to lock unrelated UI fields during targeted modification.</li>
+                    <li><a href="#mythology">📚 Mythology & Core Philosophy</a></li>
+        <li>[2025-04-16] Mythology declared: Base Unbroken Code locked, logger panels deprecated.</li>
+                    <li><a href="#module-integration">🧩 Module Integration</a></li>
+        <li>[2025-04-16] Logged failure analysis of original YT Extraction Console — integration flaws and correction rules added.</li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+        <li>[2025-04-16] Logged Brain Reboot Checkpoint — system rebuild after chat wipe confirmed.</li>
+        <li>[2025-04-16] Confirmed memory + build state from reboot recovery — verified modular structure and app status.</li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+        <li>[2025-04-16] Logged Build Methodology v1.11 — step-based compiler strategy now hard-coded.</li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        <li>[2025-04-16] Logged EUI Builder Core Structure — modular logic trainer app for UI-first builds.</li>
+        </ul>
+    </section>
+</body>
+</html>
+
+<section id="mythology">
+  <h2>📚 Mythology & Core Philosophy</h2>
+  <ul>
+    <li><a href="#base-template-mythology">🧠 Base Template & Build Philosophy</a></li>
+              <li><a href="#module-integration">🧩 Module Integration</a></li>
+                    <li><a href="#system-recovery">🔁 System Recovery & Brain Reboots</a></li>
+                    <li><a href="#compiler-behavior">🧠 Compiler Behavior & Build Strategy</a></li>
+                    <li><a href="#eui-builder-system">🏗️ EUI Builder System</a></li>
+        </ul>
+
+  <div class="rule-block" id="base-template-mythology">
+    <h3>[RULE] The Hello Extension Is Now the Brain</h3>
+    <p><strong>Status:</strong> ✅ CORE MANDATE</p>
+    <p><strong>Base Template:</strong> hello_extension_mythology_wide_v1.0.zip</p>
+    <p><strong>Specs:</strong> 500px width, Start button, output log area, modern CSS, manifest v3 only</p>
+    <p><strong>Strategy:</strong> Add one field at a time. Revert on break. Never debug garbage.</p>
+    <p><strong>Quotes:</strong> “Base Unbroken Code” — “Never build on top of trash.”</p>
+    <p><strong>Source:</strong> brain_update_log_2025-04-16 (6).txt</p>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+
+[2025-04-16]
+[PERMANENT BUILD MYTHOLOGY]
+
+[RULE NAME] Burned-In Injector Base Strategy (GitHub-First Rule)
+
+[DECLARATION]
+All future tools involving browser-based search injection or navigation must begin by importing and using a **verified, working front-end injector** — preferably sourced from GitHub or prior working project files.
+
+This known injector will serve as:
+✅ The front-end search trigger
+✅ The page launcher into Google/YouTube/target domain
+✅ The shell that allows custom logic (extractors, crawlers) to be layered on top
+
+[MANDATE]
+ChatGPT must not attempt to rebuild search injector behavior from scratch if a known working GitHub-based injector is available.
+
+Instead:
+- ✅ Pull and isolate the GitHub injector logic
+- ✅ Plug in custom scraping/output logic after page load
+- ✅ Control search terms via the user’s input field
+- ✅ Strip out retry/pagination logic unless specified
+
+[STATUS] 🔥 BURNED IN — This is permanently embedded as standard operating procedure.
