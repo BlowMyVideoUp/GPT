@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain System EUI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brain System User Interface</h1>
+    </header>
+
+    <div class="container">
+        <h2>Problem-Solution Log</h2>
+        <table id="logTable">
+            <thead>
+                <tr>
+                    <th>Problem</th>
+                    <th>Solution</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Example problem</td>
+                    <td contenteditable="true">Example solution</td>
+                    <td><button onclick="saveLog()">Save</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Rules Management</h2>
+        <table id="rulesTable">
+            <thead>
+                <tr>
+                    <th>Rule Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">ICON_RULE_01</td>
+                    <td contenteditable="true">Icons must be in root</td>
+                    <td><button onclick="saveRule()">Save</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Mythology Editor</h2>
+        <div class="form-container">
+            <input type="text" id="mythologyName" placeholder="Add new mythology term">
+            <button onclick="addMythology()">Add Term</button>
+        </div>
+    </div>
+
+    <script>
+        function saveLog() {
+            // Logic to save the log to the database (e.g., JSON storage or back-end)
+            alert('Log saved!');
+        }
+
+        function saveRule() {
+            // Logic to save the rule to the database
+            alert('Rule saved!');
+        }
+
+        function addMythology() {
+            let term = document.getElementById('mythologyName').value;
+            if (term) {
+                alert('Mythology term added: ' + term);
+            }
+        }
+    </script>
+</body>
+</html>
