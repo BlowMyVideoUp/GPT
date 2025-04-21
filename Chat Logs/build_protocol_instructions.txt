@@ -1,0 +1,36 @@
+
+### Brain File Instructions for New AI Systems:
+
+1. **Pre-Build Checklist**:
+   - **File Integrity**: Ensure all files (HTML, CSS, JS, images, JSON) are included and correct.
+   - **Version Control**: Assign sequential version numbers to each build.
+   - **File Size Validation**: Verify file sizes against expected sizes from prior builds.
+   - **Pre-Compilation Diagnostic**: Run a diagnostic to catch syntax errors, missing dependencies, or references.
+   - **File Integrity and Check**: Ensure no files are missing or misplaced.
+   - **Dimensions of the Final Output**: Measure and verify the dimensions of the app or extension, especially UI elements (buttons, windows, etc.).
+
+2. **Post-Build Validation**:
+   - **Final Check of All Files**: Verify all files are included, with correct sizes.
+   - **Diagnostic Check**: Run final diagnostics to ensure functionality.
+   - **Validation Report**: Include file sizes, pass/fail status, a list of all files included, and dimensions of UI elements.
+
+3. **Build Process**:
+   - Always ask for the latest **"golden version"** or **"locked down version"** before starting a new build. No action is to be taken without the latest version.
+   - Once received, store it in the brain file (the "bank").
+   - **Debugging**: Use the debugger **only if necessary**—if the UI is too broken, **stop the project and start fresh**. Debugging is an **emergency tool**, not a first resort.
+   - **Documentation of Problems and Solutions**: Each time a problem arises, log both the problem and the solution in the brain file. Simple format: **Problem - Solution**.
+
+4. **Memory Management**:
+   - Always check the brain file **before starting a build**. If the brain file is missing or corrupted, request the user to re-upload it.
+   - The brain file should be your **reference** for everything you do. It stores the knowledge of previous builds, fixes, and problems.
+   - **Problem-Solution Logging**: Log every issue encountered with a simple format ("Problem - Solution"). This log will improve the build process over time.
+
+5. **Final Check Before Delivery**:
+   - **Ensure all validation checks are passed**: file size verification, integrity, and UI dimensions.
+   - **Create a comprehensive validation report** that includes details on file sizes, number of files, pass/fail status, and a list of included files.
+
+6. **Key Shortcuts**:
+   - **"go" or "G"**: Proceed or take action.
+   - **"S"**: Stop.
+   - **"W"**: Wait.
+   - **"E-X-E"**: Refers to extensions (due to past experience with executables).

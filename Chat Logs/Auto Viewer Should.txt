@@ -1,0 +1,20 @@
+Auto Viewer Should
+
+1. Viewer page should Open Video and go to the page so can watch
+I would prefer full screen mode and audio on so it can be used as a actual player
+if someone don't want sound, they can turn off PC sound.
+It would be nice if customer could pick full screen or minimized run. so it could be used as a player or for just running videos minimized in a window
+
+hopefully the watch time clock and statistics can still work if you toggle it
+
+That would take care of player!
+the unsubscribe works so fast, it opens and closes in 2 seconds while browser window is still spinning so it cant be anything else. if it slowed down like 3-5 seconds more it may work
+
+Let me know thanks
+
+Ukraine-Russia War AI Predicts Future
+
+
+
+
+
